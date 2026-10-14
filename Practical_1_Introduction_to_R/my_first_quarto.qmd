@@ -1,0 +1,15 @@
+---
+title: "practical 1"
+author: "Monica Chen"
+---
+
+I have measured the diameter of four bacterial colonies. The results were as follows: 2.2mm, 1.6mm, 3.3mm, 4.0mm.
+
+I want to calculate the total diameter of these colonies.
+
+```{r}
+total_colony_diameter <- sum(2.2, 1.6, 3.3, 4.0)
+print(total_colony_diameter)
+```
+
+The total diameter of my colonies is 11.1 mm. **bold text** *italic text* [link text](https://www.youtube.com/watch?v=dQw4w9WgXcQ) ***hellllllloooooo*** ![帅哥](images/Image%2012.jpeg){fig-alt="Elephant drawing."} [![大帅哥](images/IMG_4533.jpeg){fig-alt="Elephant drawing."}](https://quarto.org)

@@ -1,0 +1,19 @@
+---
+title: "Human genome project"
+author: "Monica Chen the Queen"
+---
+
+## Task: Calculate the total number of genes with regionally elevated expression in the forebrain regions in human, pig and mouse.
+
+```{r}
+human_elevated <- sum(180,83,57,110)
+pig_elevated <- sum(109,157,51,45)
+mouse_elevated <- sum(55,185,60,98)
+print(paste("total number of genes with regionally elevated expression in the forebrain in humans is", human_elevated))
+print(paste("total number of genes with regionally elevated expression in the forebrain in humans is",pig_elevated))
+print(paste("total number of genes with regionally elevated expression in the forebrain in humans is",mouse_elevated))
+```
+
+### Conclusion
+
+[**Humans** had the highest number of genes with regionally elevated expression.]{.mark}
