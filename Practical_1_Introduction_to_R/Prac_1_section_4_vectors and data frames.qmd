@@ -1,0 +1,64 @@
+---
+title: "Practical_1_exercise_3"
+author: "Monica"
+---
+Preparing...
+```{r}
+install.packages("fortunes")
+library(fortunes)
+fortune()
+fortune()
+fortune()
+library(tidyverse)
+library(gt)
+```
+Learning how to use vectors
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+my_fav_one <- all_my_pets[4]
+```
+
+
+```{r}
+print(my_fav_one)
+```
+
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+
+print(my_data_frame)
+```
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+gt(my_data_frame)
+```
+```{r}
+cell <- c("CX1", "CX2")
+treated <- c(TRUE, FALSE)
+num_cells_before <- c(5415, 8123)
+num_cells_after <- c(1432, 7543)
+
+my_data_frame <- tibble(
+  cell_ID = cell,
+  treated = treated,
+  num_cells_before = num_cells_before,
+  num_cells_after = num_cells_after
+)
+gt(my_data_frame)
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
+gt(weather)
+```
+
+
